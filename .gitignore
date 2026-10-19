@@ -1,30 +1,53 @@
+# Python
 __pycache__/
 *.py[cod]
-caido-clone.sqlite3
-data/
-node_modules/
-dist/
-build/
-.expo/
-.gradle/
-local.properties
-*.apk
-*.aab
-*.jks
-# Local runtime data and credentials
-*.sqlite3
-*.sqlite
-*.db
-data/
+*.egg-info/
+.venv/
+venv/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+env.sh
+*.token
+*.pem
 *.key
+*.p12
+*.pfx
 *.jks
 *.keystore
-env.sh
 local.properties
-# Build output and bundled dependencies
+
+# Captured traffic, runtime databases, and local data
+data/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.har
+*.pcap
+rea-app-analysis.json
+
+# Dependencies and generated builds
+node_modules/
+desktop/node_modules/
+dist/
+build/
 android/.gradle/
 android/app/build/
-desktop/node_modules/
-desktop/release/
+.gradle/
+.expo/
+*.apk
+*.aab
+*.dmg
+*.blockmap
+
+# Local application bundles and macOS metadata
 Caido.app/
-rea-app-analysis.json
+.DS_Store
+
+# IDE and editor files
+.idea/
+.vscode/
+*.iml
