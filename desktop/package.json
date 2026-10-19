@@ -1,0 +1,30 @@
+{
+  "name": "zpx0xy-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ZPX0XY bug-bounty workbench desktop shell",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac dmg"
+  },
+  "devDependencies": {
+    "electron": "44.9.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "io.zpx0xy.desktop",
+    "productName": "ZPX0XY",
+    "directories": { "output": "release" },
+    "files": ["main.cjs", "package.json"],
+    "extraResources": [
+      { "from": "../server.py", "to": "server.py" },
+      { "from": "../index.html", "to": "index.html" }
+    ],
+    "mac": {
+      "target": ["dmg"],
+      "category": "public.app-category.developer-tools",
+      "identity": null
+    }
+  }
+}

@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+caido-clone.sqlite3
+data/
+node_modules/
+dist/
+build/
+.expo/
+.gradle/
+local.properties
+*.apk
+*.aab
+*.jks
+# Local runtime data and credentials
+*.sqlite3
+*.sqlite
+*.db
+data/
+*.key
+*.jks
+*.keystore
+env.sh
+local.properties
+# Build output and bundled dependencies
+android/.gradle/
+android/app/build/
+desktop/node_modules/
+desktop/release/
+Caido.app/
+rea-app-analysis.json
